@@ -7,10 +7,14 @@ puts "1) Show Contacts"
 puts "2) Add Contacts"
 puts "3) Quit"
 
+contacts = ["Jake", "Dave", "Nhi", "Will"]
 user_input = gets.to_i
+
 case user_input
   when 1
-    puts "Show all contacts."
+    contacts.each do |contact|
+      puts "Contact: #{contact}"
+    end
   when 2
     puts "Add a new contact"
   when 3
